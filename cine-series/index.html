@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark" style="overflow-x: hidden">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Favicon-->
+    <link
+      rel="icon"
+      href="./image/Jujutsu Kaisen-logos_transparent.png"
+      type="image/x-icon"
+    />
+    <!--CSS-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!--AOS CSS-->
+    <link href="./css/aos.css" rel="stylesheet" />
+    <!--Fancybox CSS-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+    <title>Cine/Series</title>
+  </head>
+  <body>
+    <header class="miheader">
+      <!--Menu-->
+      <nav
+        class="navbar navbar-expand-md navbar-dark sticky-top border-bottom border-1 border-dark navbar-transparent"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./image/Jujutsu Kaisen-logos_transparent.png"
+              alt="Logo"
+              width="30"
+              height="24"
+            />
+          </a>
+          <div class="btn-group">
+            <button
+              type="button"
+              class="btn btn-secondary dropdown-toggle"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i class="bi bi-palette-fill"></i>
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="#" onclick="changeTheme('light')"
+                  ><i class="bi bi-sun"></i> Claro</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#" onclick="changeTheme('dark')"
+                  ><i class="bi bi-moon"></i> Oscuro</a
+                >
+              </li>
+            </ul>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul class="navbar-nav me-auto ms-auto mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#inicio"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#tarjetas">Tarjetas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#faq">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#galeria">Galería</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#formulario">Formulario</a>
+              </li>
+            </ul>
+            <div class="redes_sociales">
+              <a href="https://www.discord.com/"
+                ><i class="bi bi-discord"></i
+              ></a>
+              <a href="https://www.github.com/"><i class="bi bi-github"></i></a>
+              <a href="https://www.youtube.com/"
+                ><i class="bi bi-youtube"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!--Video-->
+      <section id="inicio" class="video-container">
+        <video autoplay muted loop>
+          <source src="./image/video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-texto">
+          <h1>Jujutsu Kaisen</h1>
+        </div>
+      </section>
+
+      <!-- Sección Tarjetas - Personajes de Jujutsu Kaisen -->
+      <section id="tarjetas" class="container mt-5">
+        <div class="container mt-4">
+          <div
+            class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 align-items-stretch"
+          >
+            <!-- Tarjeta Yuji Itadori -->
+            <div
+              class="col-12 col-md-6 col-lg-4 my-3 mx-auto scrollable-content animacion-tarjeta" data-aos="fade-up" data-aos-delay="0"
+            >
+              <div class="card bg-white text-dark h-100">
+                <img
+                  src="./image/personajes/yuji.webp"
+                  class="card-img-top img-fuild"
+                  alt="Imagen Yuji Itadori"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Yuji Itadori</h5>
+                  <p class="card-text">Protagonista de Jujutsu Kaisen.</p>
+                  <a href="./yuji.html" class="btn btn-primary"
+                    >Más sobre Yuji</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjeta Megumi Fushiguro -->
+            <div
+              class="col-12 col-md-6 col-lg-4 my-3 mx-auto scrollable-content animacion-tarjeta" data-aos="fade-up" data-aos-delay="100"
+            >
+              <div class="card bg-white text-dark h-100">
+                <img
+                  src="./image/personajes/megumi.webp"
+                  class="card-img-top img-fuild"
+                  alt="Imagen Megumi Fushiguro"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Megumi Fushiguro</h5>
+                  <p class="card-text">Compañero de Yuji Itadori.</p>
+                  <a href="./megumi.html" class="btn btn-primary"
+                    >Más sobre Megumi</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjeta Nobara Kugisaki -->
+            <div
+              class="col-12 col-md-6 col-lg-4 my-3 mx-auto scrollable-content animacion-tarjeta" data-aos="fade-up" data-aos-delay="200"
+            >
+              <div class="card bg-white text-dark h-100">
+                <img
+                  src="./image/personajes/nobara.webp"
+                  class="card-img-top img-fuild"
+                  alt="Imagen Nobara Kugisaki"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Nobara Kugisaki</h5>
+                  <p class="card-text">Compañera de Yuji Itadori.</p>
+                  <a href="./nobara.html" class="btn btn-primary"
+                    >Más sobre Nobara</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjeta Gojo Satoru -->
+            <div
+              class="col-12 col-md-6 col-lg-4 my-3 mx-auto scrollable-content animacion-tarjeta" data-aos="fade-up" data-aos-delay="0"
+            >
+              <div class="card bg-white text-dark h-100">
+                <img
+                  src="./image/personajes/gojo.webp"
+                  class="card-img-top img-fuild"
+                  alt="Imagen Gojo Satoru"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Gojo Satoru</h5>
+                  <p class="card-text">Instructor de Yuji Itadori.</p>
+                  <a href="./gojo.html" class="btn btn-primary"
+                    >Más sobre Gojo</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjeta Ryomen Sukuna -->
+            <div
+              class="col-12 col-md-6 col-lg-4 my-3 mx-auto scrollable-content animacion-tarjeta" data-aos="fade-up" data-aos-delay="100"
+            >
+              <div class="card bg-white text-dark h-100">
+                <img
+                  src="./image/personajes/ryomen.webp"
+                  class="card-img-top img-fuild"
+                  alt="Imagen Ryomen Sukuna"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Ryomen Sukuna</h5>
+                  <p class="card-text">
+                    Rey de las maldiciones contenido por Yuji Itadori.
+                  </p>
+                  <a href="./ryomen.html" class="btn btn-primary"
+                    >Más sobre Ryomen</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjeta Yuuta Okkotsu -->
+            <div
+              class="col-12 col-md-6 col-lg-4 my-3 mx-auto scrollable-content animacion-tarjeta" data-aos="fade-up" data-aos-delay="200"
+            >
+              <div class="card bg-white text-dark h-100">
+                <img
+                  src="./image/personajes/kento.webp"
+                  class="card-img-top img-fuild"
+                  alt="Imagen Yuuta Okkotsu"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Kento Nanami</h5>
+                  <p class="card-text">Personaje de Jujutsu Kaisen.</p>
+                  <a href="./kento.html" class="btn btn-primary"
+                    >Más sobre Kento</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección de Preguntas Frecuentes (Accordion) -->
+      <section id="faq" class="container mt-5">
+        <div class="container">
+          <h2>FAQ</h2>
+          <section class="row">
+            <section class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    ¿Qué es Jujutsu Kaisen?
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Jujutsu Kaisen es una serie de manga y anime japonesa creada
+                    por Gege Akutami.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    ¿Cuándo se lanzó el manga de Jujutsu Kaisen?
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    El manga comenzó su serialización en marzo de 2018 en la
+                    revista Weekly Shōnen Jump de Shueisha.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    ¿Cuándo se emitió la primera temporada del anime?
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    La primera temporada del anime se emitió desde octubre de
+                    2020 hasta marzo de 2021.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
+                    ¿Quiénes son los personajes principales de Jujutsu Kaisen?
+                  </button>
+                </h2>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Los personajes principales incluyen a Yuji Itadori, Megumi
+                    Fushiguro, Nobara Kugisaki y el instructor Satoru Gojo.
+                  </div>
+                </div>
+              </div>
+            </section>
+          </section>
+        </div>
+      </section>
+
+      <!-- Galería Fotográfica -->
+      <section id="galeria" class="container mt-5">
+        <h2>Galería Fotográfica</h2>
+        <article class="row">
+          <div class="col-md-4" data-aos="zoom-in">
+            <a
+              href="./image/galeria/3.webp"
+              data-fancybox="gallery"
+              data-caption="Foto 3"
+            >
+              <img
+                src="./image/galeria/3.webp"
+                class="img-fluid ñ m-2 rounded"
+                alt="Foto 3"
+              />
+            </a>
+          </div>
+          <div class="col-md-4" data-aos="zoom-in">
+            <a
+              href="./image/galeria/4.webp"
+              data-fancybox="gallery"
+              data-caption="Foto 4"
+            >
+              <img
+                src="./image/galeria/4.webp"
+                class="img-fluid ñ m-2 rounded"
+                alt="Foto 4"
+              />
+            </a>
+          </div>
+          <div class="col-md-4" data-aos="zoom-in">
+            <a
+              href="./image/galeria/8.webp"
+              data-fancybox="gallery"
+              data-caption="Foto 8"
+            >
+              <img
+                src="./image/galeria/8.webp"
+                class="img-fluid ñ m-2 rounded"
+                alt="Foto 8"
+              />
+            </a>
+          </div>
+          <div class="col-md-4" data-aos="zoom-in">
+            <a
+              href="./image/galeria/9.webp"
+              data-fancybox="gallery"
+              data-caption="Foto 1"
+            >
+              <img
+                src="./image/galeria/9.webp"
+                class="img-fluid ñ m-2 rounded"
+                alt="Foto 9"
+              />
+            </a>
+          </div>
+          <div class="col-md-4" data-aos="zoom-in">
+            <a
+              href="./image/galeria/10.webp"
+              data-fancybox="gallery"
+              data-caption="Foto 1"
+            >
+              <img
+                src="./image/galeria/10.webp"
+                class="img-fluid ñ m-2 rounded"
+                alt="Foto 10"
+              />
+            </a>
+          </div>
+          <div class="col-md-4" data-aos="zoom-in">
+            <a
+              href="./image/galeria/11.webp"
+              data-fancybox="gallery"
+              data-caption="Foto 11"
+            >
+              <img
+                src="./image/galeria/11.webp"
+                class="img-fluid ñ m-2 rounded"
+                alt="Foto 11"
+              />
+            </a>
+          </div>
+          <div class="col-md-4" data-aos="zoom-in">
+            <a
+              href="./image/galeria/12.webp"
+              data-fancybox="gallery"
+              data-caption="Foto 12"
+            >
+              <img
+                src="./image/galeria/12.webp"
+                class="img-fluid ñ m-2 rounded"
+                alt="Foto 12"
+              />
+            </a>
+          </div>
+          <div class="col-md-4" data-aos="zoom-in">
+            <a
+              href="./image/galeria/13.webp"
+              data-fancybox="gallery"
+              data-caption="Foto 13"
+            >
+              <img
+                src="./image/galeria/13.webp"
+                class="img-fluid ñ m-2 rounded"
+                alt="Foto 13"
+              />
+            </a>
+          </div>
+          <div class="col-md-4" data-aos="zoom-in">
+            <a
+              href="./image/galeria/14.webp"
+              data-fancybox="gallery"
+              data-caption="Foto 14"
+            >
+              <img
+                src="./image/galeria/14.webp"
+                class="img-fluid ñ m-2 rounded"
+                alt="Foto 14"
+              />
+            </a>
+          </div>
+          <div class="col-md-4" data-aos="zoom-in">
+            <a
+              href="./image/galeria/15.webp"
+              data-fancybox="gallery"
+              data-caption="Foto 15"
+            >
+              <img
+                src="./image/galeria/15.webp"
+                class="img-fluid ñ m-2 rounded"
+                alt="Foto 15"
+              />
+            </a>
+          </div>
+          <div class="col-md-4" data-aos="zoom-in">
+            <a
+              href="./image/galeria/16.webp"
+              data-fancybox="gallery"
+              data-caption="Foto 16"
+            >
+              <img
+                src="./image/galeria/16.webp"
+                class="img-fluid ñ m-2 rounded"
+                alt="Foto 16"
+              />
+            </a>
+          </div>
+          <div class="col-md-4" data-aos="zoom-in">
+            <a
+              href="./image/galeria/17.webp"
+              data-fancybox="gallery"
+              data-caption="Foto 17"
+            >
+              <img
+                src="./image/galeria/17.webp"
+                class="img-fluid ñ m-2 rounded"
+                alt="Foto 17"
+              />
+            </a>
+          </div>
+          <div class="col-md-4" data-aos="zoom-in">
+            <a
+              href="./image/galeria/18.webp"
+              data-fancybox="gallery"
+              data-caption="Foto 18"
+            >
+              <img
+                src="./image/galeria/18.webp"
+                class="img-fluid ñ m-2 rounded"
+                alt="Foto 18"
+              />
+            </a>
+          </div>
+          <div class="col-md-4" data-aos="zoom-in">
+            <a
+              href="./image/galeria/19.webp"
+              data-fancybox="gallery"
+              data-caption="Foto 19"
+            >
+              <img
+                src="./image/galeria/19.webp"
+                class="img-fluid ñ m-2 rounded"
+                alt="Foto 19"
+              />
+            </a>
+          </div>
+        </article>
+      </section>
+
+      <!--Formulario-->
+      <section id="formulario" class="container mt-5">
+        <article class="row">
+          <h2 class="text-white">Formulario de Contacto</h2>
+          <form method="POST" action="procesar_formulario.php">
+            <!-- Fila 1: Nombre y Apellidos -->
+            <div class="row mb-3">
+              <div class="col-lg-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nombre"
+                  name="nombre"
+                  placeholder="Nombre"
+                  required
+                />
+              </div>
+              <div class="col-lg-9">
+                <label for="apellidos" class="form-label">Apellidos</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="apellidos"
+                  name="apellidos"
+                  placeholder="Apellidos"
+                  required
+                />
+              </div>
+            </div>
+
+            <!-- Fila 2: Correo y Teléfono -->
+            <div class="row mb-3">
+              <div class="col-lg-6">
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  placeholder="Correo Electrónico"
+                  required
+                />
+              </div>
+              <div class="col-lg-6">
+                <label for="telefono" class="form-label">Teléfono</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="telefono"
+                  name="telefono"
+                  placeholder="Teléfono"
+                  required
+                />
+              </div>
+            </div>
+
+            <!-- Fila 3: Asunto -->
+            <div class="row mb-3">
+              <div class="col-lg-12">
+                <label for="asunto" class="form-label">Asunto</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="asunto"
+                  name="asunto"
+                  placeholder="Asunto"
+                  required
+                />
+              </div>
+            </div>
+
+            <!-- Fila 4: Mensaje -->
+            <div class="row mb-3">
+              <div class="col-lg-12">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea
+                  class="form-control"
+                  id="mensaje"
+                  name="mensaje"
+                  rows="4"
+                  placeholder="Mensaje"
+                  required
+                ></textarea>
+              </div>
+            </div>
+
+            <!-- Botón de Enviar -->
+            <div class="row mb-3">
+              <div class="col-lg-12">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </div>
+            </div>
+          </form>
+        </article>
+      </section>
+      <!--Pedir datos a la base de datos-->
+      <section class="container mt-5">
+        <h1 class="text-white">Mostrar Datos de la Tabla</h1>
+        <button id="mostrarDatosBtn" class="btn btn-primary">
+          Mostrar Datos
+        </button>
+        <button id="ocultarDatosBtn" class="btn btn-danger d-none">
+          Ocultar Datos
+        </button>
+        <div id="resultado" class="mt-3"></div>
+      </section>
+    </header>
+
+    <!--Footer-->
+    <footer class="container mt-5 text-center">
+      <h3>&copy; 2024 Cine/Series. Todos los derechos reservados.</h3>
+    </footer>
+
+    <!--Bootstrap5 Script-->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!--AOS Script-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--FancyBox-->
+    <script>
+      $(document).ready(function () {
+        $("[data-fancybox]").fancybox();
+      });
+      document
+        .getElementById("mostrarDatosBtn")
+        .addEventListener("click", function () {
+          // Realizar petición para obtener datos de la tabla formulario
+          fetch("obtener_datos.php")
+            .then((response) => response.text())
+            .then((data) => {
+              // Mostrar datos en el elemento con id "resultado"
+              document.getElementById("resultado").innerHTML = data;
+              // Ocultar botón de mostrar datos y mostrar botón de ocultar datos
+              document
+                .getElementById("mostrarDatosBtn")
+                .classList.add("d-none");
+              document
+                .getElementById("ocultarDatosBtn")
+                .classList.remove("d-none");
+            })
+            .catch((error) => console.error("Error:", error));
+        });
+
+      document
+        .getElementById("ocultarDatosBtn")
+        .addEventListener("click", function () {
+          // Limpiar el contenido del elemento "resultado"
+          document.getElementById("resultado").innerHTML = "";
+          // Ocultar botón de ocultar datos y mostrar botón de mostrar datos
+          document.getElementById("ocultarDatosBtn").classList.add("d-none");
+          document.getElementById("mostrarDatosBtn").classList.remove("d-none");
+        });
+    </script>
+    <!--Video Dinámico-->
+    <script>
+      window.addEventListener("resize", () => {
+        const videoContainer = document.querySelector(".video-container");
+        const navbar = document.querySelector(".navbar");
+
+        // Ajustar el tamaño del contenedor del video para evitar el desbordamiento horizontal
+        videoContainer.style.width = `${window.innerWidth}px`;
+        videoContainer.style.height = `${window.innerWidth * 0.5625}px`; // Mantén la relación de aspecto 16:9
+
+        // Ajustar la posición del menú después de redimensionar
+        navbar.style.width = `${window.innerWidth}px`;
+      });
+
+      // Llamamos al evento resize una vez para que el video se ajuste al tamaño inicial de la ventana
+      window.dispatchEvent(new Event("resize"));
+    </script>
+    <!--Fondo-->
+    <script>
+      function changeTheme(theme) {
+        const cards = document.querySelectorAll(".card");
+        const navbar = document.querySelector(".navbar");
+        const icons = document.querySelectorAll(".bi");
+
+        if (theme === "light") {
+          document.documentElement.setAttribute("data-bs-theme", "light");
+          navbar.classList.remove("navbar-dark", "bg-dark");
+          navbar.classList.add("navbar-light", "bg-white");
+          icons.forEach((icon) => {
+            icon.classList.remove("text-white");
+            icon.classList.add("text-dark");
+          });
+          cards.forEach((card) => {
+            card.classList.remove("bg-dark", "text-white");
+            card.classList.add("bg-white", "text-dark");
+          });
+          localStorage.setItem("theme", "light");
+        } else if (theme === "dark") {
+          document.documentElement.setAttribute("data-bs-theme", "dark");
+          navbar.classList.remove("navbar-light", "bg-white");
+          navbar.classList.add("navbar-dark", "bg-dark");
+          icons.forEach((icon) => {
+            icon.classList.remove("text-dark");
+            icon.classList.add("text-white");
+          });
+          cards.forEach((card) => {
+            card.classList.remove("bg-white", "text-dark");
+            card.classList.add("bg-dark", "text-white");
+          });
+          localStorage.setItem("theme", "dark");
+        }
+      }
+
+      // Verificar si hay un tema guardado en localStorage
+      let savedTheme = localStorage.getItem("theme");
+      if (savedTheme) {
+        changeTheme(savedTheme);
+      }
+    </script>
+    <!--AOS-->
+    <script>
+      AOS.init();
+    </script>
+    <script src="./js/aos.js"></script>
+  </body>
+</html>
